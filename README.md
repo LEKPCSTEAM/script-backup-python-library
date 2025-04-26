@@ -19,8 +19,8 @@ Use the following command to download the .whl files for all the packages listed
 ```bash
 mkdir packages
 pip download -r requirements.txt -d packages/
--r requirements.txt: Specifies the requirements.txt file containing the list of dependencies.
 ```
+-r requirements.txt: Specifies the requirements.txt file containing the list of dependencies.
 -d packages/: Downloads all .whl files into the packages/ directory.
 
 3. Verify the Downloaded .whl Files
@@ -31,10 +31,10 @@ If you want to install the packages from the downloaded .whl files without an in
 
 ```bash
 pip install --no-index --find-links=packages/ -r requirements.txt
+```
 # --no-index: Prevents pip from searching the PyPI index.
 
 --find-links=packages/: Tells pip to look for the .whl files in the packages/ directory.
-```
 5. Restore Dependencies
 To restore the environment in the future, simply repeat the process of downloading the .whl files and installing them from the local files.
 
